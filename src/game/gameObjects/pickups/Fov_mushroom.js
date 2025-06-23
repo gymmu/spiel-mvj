@@ -10,18 +10,24 @@ export default class FovMushroom extends StaticObject {
     this.setSize(16, 16)
     this.setOffset(8, 8)
 
-    this.name = "Fov_m ushroom"
+    this.name = "Fov_mushroom"
   }
 
   onCollide(player) {
-    if (player instanceof Player) {
-      player.decreaseSpeed(50)
-      this.scene.time.delayedCall(1000, () => {
-        player.resetSpeed()
-      })
-      this.destroy()
+    //super.onCollide(player)
+    player.heal(this.props.healAmount || 5)
+
+    // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
+    if (this.props.keyName) {
+      player.addKey(this.props.keyName)
     }
-  }
+
+    if (this.scene.cameraManager) {
+      this.scene.cameraManager.cameraMaskRadius -= 100
+      this.scene.cameraManager.setCameraMask()
+    }
+    this.destroy()
+  }v
 }
 
 // Registriere das Mushroom-Objekt automatisch beim Import
