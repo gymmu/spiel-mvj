@@ -15,8 +15,8 @@ export default class PoisonFlower extends StaticObject {
 
   onCollide(player) {
     //super.onCollide(player)
-    player.heal(this.props.healAmount || -2.5)
-    player.decreaseSpeed(70)
+    player.damage(this.props.dagameAmount || 1)
+    player.decreaseSpeed(50)
           this.scene.time.delayedCall(5000, () => {
            player.resetSpeed()
           })

@@ -8,15 +8,15 @@ export default class Mushroom extends StaticObject {
 
     this.setOrigin(0, 0)
     this.setSize(16, 16)
-    this.setOffset(16, 16)
+    this.setOffset(8, 8)
 
     this.name = "mushroom"
   }
 
   onCollide(player) {
     if (player instanceof Player) {
-      player.decreaseSpeed(50)
-      this.scene.time.delayedCall(1000, () => {
+      player.increaseSpeed(50)
+      this.scene.time.delayedCall(5000, () => {
         player.resetSpeed()
       })
       this.destroy()
