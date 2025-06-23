@@ -15,8 +15,11 @@ export default class PoisonFlower extends StaticObject {
 
   onCollide(player) {
     //super.onCollide(player)
-    player.heal(this.props.healAmount || 5)
-
+    player.heal(this.props.healAmount || -2.5)
+    player.decreaseSpeed(50)
+          this.scene.time.delayedCall(5000, () => {
+           player.resetSpeed()
+          })
     // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
     if (this.props.keyName) {
       player.addKey(this.props.keyName)

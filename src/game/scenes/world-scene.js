@@ -11,6 +11,7 @@ import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
 import "../gameObjects/pickups/Poison_flower"
+import "../gameObjects/pickups/Fov_mushroom"
 
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
