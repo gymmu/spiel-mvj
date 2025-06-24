@@ -491,6 +491,11 @@
                          "name":"goToWorld",
                          "type":"string",
                          "value":"map-level-03"
+                        },
+                        {
+                         "name":"needNpcsKilled",
+                         "type":"int",
+                         "value":1
                         }],
                  "rotation":0,
                  "type":"",
@@ -506,7 +511,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":135,
+ "nextobjectid":116,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

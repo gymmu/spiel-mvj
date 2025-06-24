@@ -94,6 +94,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   attackPower = 5
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
+  npcsKilled=0
 
   constructor(scene, x, y) {
     super(scene, x, y, "player")

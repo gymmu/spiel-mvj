@@ -4,7 +4,7 @@ import Player from "./player.js"
 import HpBar from "../hpbar"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
-  hp = 50
+  hp = 100
   maxHp = 100
   #speed = 100
   stepsLeft = 60
@@ -142,6 +142,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
       }
       const {player} = this.scene
       player.addBuff()
+      player.npcsKilled+=1
       this.destroy()
     } else {
       // Update HP bar
