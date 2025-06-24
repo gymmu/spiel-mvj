@@ -14,28 +14,14 @@ export default class Cave extends StaticObject {
     // Wenn der Spieler nicht vorhanden ist, mache nichts
     if (!actor) return
 
-    // Wenn ein NPC die Türe betritt, entferne den NPC
-    if (actor instanceof NPC) {
-      actor.destroy()
-      return
-    }
-
     // Lese die benötigten Eigenschaften der Türe aus
-    const { goToWorld, needKey } = this.props
+    const { goToWorld, needNpcsKilled } = this.props
 
     // Wenn kein Ziel gesetzt ist, mache nichts
     if (goToWorld == null) return
 
     // Wenn kein Schlüssel gebraucht wird, geh direkt zum Level
-    if (needKey == null) {
-      // Vor dem Szenenwechsel Spielerstatus speichern
-      savePlayerState(this.scene, this.scene.player)
-      this.scene.scene.start("world", { map: goToWorld })
-      return
-    }
-
-    // Wenn ein Schlüssel gebraucht wird, prüfe, ob dieser vorhanden ist. Wenn Ja, geh zum Level.
-    if (actor.keys[needKey] > 0) {
+    if (needNpcsKilled == null || actor.npcsKilled >= needNpcsKilled) {
       // Vor dem Szenenwechsel Spielerstatus speichern
       savePlayerState(this.scene, this.scene.player)
       this.scene.scene.start("world", { map: goToWorld })
