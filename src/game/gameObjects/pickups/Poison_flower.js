@@ -20,6 +20,15 @@ export default class PoisonFlower extends StaticObject {
           this.scene.time.delayedCall(5000, () => {
            player.resetSpeed()
           })
+               if (this.props.keyName) {
+      player.addKey(this.props.keyName)
+    }
+
+    if (this.scene.cameraManager) {
+      this.scene.cameraManager.cameraMaskRadius += 50
+      this.scene.cameraManager.setCameraMask()
+    }
+    this.destroy()
   }
 }
 
