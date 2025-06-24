@@ -96,10 +96,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
   }
 
   damage(value) {
-    console.log(this.scene.player )
-    player.addBuff()
     if (this.isInvulnerable) return
-
     this.isInvulnerable = true
     this.scene.time.delayedCall(500 , () => {
       this.isInvulnerable = false
@@ -108,6 +105,8 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     if (value == null) value = 0
     this.hp = this.hp - value
     if (this.hp <= 0) {
+      const {player} = this.scene
+      player.addBuff()
       this.destroy()
     }
   }
