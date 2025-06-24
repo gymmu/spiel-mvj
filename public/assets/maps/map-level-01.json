@@ -299,7 +299,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":13,
+ "nextobjectid":14,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -309,12 +309,12 @@
          "columns":4,
          "firstgid":1,
          "image":"..\/tileset.png",
-         "imageheight":68,
+         "imageheight":136,
          "imagewidth":136,
          "margin":1,
          "name":"tileset",
          "spacing":2,
-         "tilecount":8,
+         "tilecount":16,
          "tileheight":32,
          "tiles":[
                 {

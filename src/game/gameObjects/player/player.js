@@ -28,7 +28,7 @@ export function savePlayerState(scene, player) {
 export function loadPlayerState(scene, map) {
   // Spielerstatus aus Registry laden oder Standardwerte setzen
   const savedPlayerState = scene.registry.get("playerState") || {
-    hp: 10,
+    hp: 100,
     inventory: new Array(6).fill(null),
     keys: {},
   }
@@ -83,7 +83,7 @@ export function createPlayer(scene, map) {
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
-  hp = 10
+  hp = 100
   maxHp = 100
   speed = 100
   attackPower = 5
