@@ -25,7 +25,7 @@ export default class PoisonFlower extends StaticObject {
     }
 
     if (this.scene.cameraManager) {
-      this.scene.cameraManager.cameraMaskRadius += 50
+      this.scene.cameraManager.cameraMaskRadius += 0
       this.scene.cameraManager.setCameraMask()
     }
     this.destroy()
