@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="88">
+ <editorsettings>
+  <export target="level-03..tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
  <layer id="1" name="Background" width="50" height="30">
   <data encoding="csv">
