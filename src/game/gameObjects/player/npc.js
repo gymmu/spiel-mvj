@@ -96,6 +96,8 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
   }
 
   damage(value) {
+    console.log(this.scene.player )
+    player.addBuff()
     if (this.isInvulnerable) return
 
     this.isInvulnerable = true

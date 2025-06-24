@@ -85,6 +85,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   hp = 10
   maxHp = 100
   speed = 100
+  attackPower = 5
   baseSpeed = 100
   gotHit = false
   isAttacking = false
@@ -276,7 +277,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Wenn die Richtung nicht 0 ist, dann erstellen wir ein Projectile
       if (dir.lengthSq() > 0) {
-        new Projectile(this.scene, this.x, this.y, dir)
+        new Projectile(this.scene, this.x, this.y, dir, 300, this.attackPower)
       }
     }
 
@@ -400,5 +401,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const itemClass = item.constructor
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
+  }
+
+  addBuff(){
+    this.attackPower *=2
   }
 }
