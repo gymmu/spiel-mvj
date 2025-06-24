@@ -44,7 +44,11 @@
  </layer>
  <objectgroup id="3" name="SpawnPoints">
   <object id="12" name="SpawnPlayer" x="48" y="416"/>
-  <object id="114" name="NPC2" x="463.5" y="208"/>
+  <object id="114" name="NPC" x="463.5" y="208">
+   <properties>
+    <property name="skin" value="npc2"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="2" name="Mushroom" gid="3" x="448" y="288" width="32" height="32">
@@ -103,7 +107,6 @@
   <object id="108" name="Fov_mushroom" gid="10" x="390.806" y="221.961" width="32" height="32"/>
   <object id="109" name="Fov_mushroom" gid="10" x="418.949" y="62.0535" width="32" height="32"/>
   <object id="110" name="Poison_flower" gid="9" x="416.391" y="128.575" width="32" height="32"/>
-  <object id="113" gid="15" x="308.933" y="572.479" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">
