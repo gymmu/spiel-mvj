@@ -99,7 +99,7 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     if (this.isInvulnerable) return
 
     this.isInvulnerable = true
-    this.scene.time.delayedCall(1000, () => {
+    this.scene.time.delayedCall(500 , () => {
       this.isInvulnerable = false
     })
 

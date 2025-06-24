@@ -15,7 +15,7 @@ export default class FovMushroom extends StaticObject {
 
   onCollide(player) {
     //super.onCollide(player)
-    player.heal(this.props.healAmount || 5)
+    player.damage(this.props.damageAmount || 5)
 
     // Wenn die Blume einen Schlüssel hat, geben wir ihn dem Spieler
     if (this.props.keyName) {
