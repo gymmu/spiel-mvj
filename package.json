@@ -1,7 +1,7 @@
 {
   "name": "spiel-mvj",
   "homepage": "https://gymmu.github.io/spiel-mvj",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "type": "module",
   "scripts": {
