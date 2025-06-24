@@ -86,10 +86,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   hp = 10
   maxHp = 100
   speed = 100
+  attackPower = 5
   baseSpeed = 100
   gotHit = false
   isAttacking = false
-  attackSpeed = 1500
+  attackSpeed = 300
   attackPower = 5
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
@@ -430,5 +431,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const itemClass = item.constructor
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
+  }
+
+  addBuff(){
+    this.attackPower *=2
   }
 }

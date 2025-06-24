@@ -15,11 +15,20 @@ export default class PoisonFlower extends StaticObject {
 
   onCollide(player) {
     //super.onCollide(player)
-    player.damage(this.props.dagameAmount || 1)
+    player.damage(this.props.dagameAmount || 7)
     player.decreaseSpeed(50)
           this.scene.time.delayedCall(5000, () => {
            player.resetSpeed()
           })
+               if (this.props.keyName) {
+      player.addKey(this.props.keyName)
+    }
+
+    if (this.scene.cameraManager) {
+      this.scene.cameraManager.cameraMaskRadius += 0
+      this.scene.cameraManager.setCameraMask()
+    }
+    this.destroy()
   }
 }
 

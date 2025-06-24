@@ -20,6 +20,7 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
     this.setScale(0.5)
     this.body.setAllowGravity(false)
     this.body.setVelocity(direction.x * speed, direction.y * speed)
+    this.attackPower = attackPower
 
     this.attackPower = attackPower
 
