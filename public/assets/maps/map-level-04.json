@@ -89,7 +89,62 @@
          "draworder":"topdown",
          "id":7,
          "name":"Doors",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":1,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":496.287,
+                 "y":371.881
+                }, 
+                {
+                 "height":0,
+                 "id":2,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":656.287,
+                 "y":370.381
+                }, 
+                {
+                 "height":0,
+                 "id":3,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":574.787,
+                 "y":289.881
+                }, 
+                {
+                 "height":0,
+                 "id":4,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":654.787,
+                 "y":211.381
+                }, 
+                {
+                 "height":0,
+                 "id":5,
+                 "name":"NPC",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":497.700043478261,
+                 "y":209.381
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -108,7 +163,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":1,
+ "nextobjectid":6,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

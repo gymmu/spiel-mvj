@@ -261,24 +261,6 @@
                  "y":256
                 },
                 {
-                 "gid":4,
-                 "height":32,
-                 "id":11,
-                 "name":"Flower",
-                 "properties":[
-                        {
-                         "name":"restoreHp",
-                         "type":"int",
-                         "value":10
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":32,
-                 "y":288
-                },
-                {
                  "gid":9,
                  "height":32,
                  "id":13,
@@ -293,26 +275,14 @@
                 {
                  "gid":10,
                  "height":32,
-                 "id":104,
-                 "name":"Fov_mushroom",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":259.814,
-                 "y":423.381
-                },
-                {
-                 "gid":10,
-                 "height":32,
                  "id":106,
                  "name":"Fov_mushroom",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":-348.879,
-                 "y":307.666
+                 "x":30.4543,
+                 "y":290.999
                 },
                 {
                  "gid":10,
@@ -351,18 +321,6 @@
                  "y":128.575
                 },
                 {
-                 "gid":15,
-                 "height":32,
-                 "id":113,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":308.933,
-                 "y":572.479
-                },
-                {
                  "gid":4,
                  "height":32,
                  "id":118,
@@ -371,8 +329,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":568.160463192721,
-                 "y":184.527708850289
+                 "x":568.16,
+                 "y":184.528
                 },
                 {
                  "gid":4,
@@ -383,8 +341,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":568.160463192721,
-                 "y":223.816377171216
+                 "x":568.16,
+                 "y":223.816
                 },
                 {
                  "gid":4,
@@ -395,8 +353,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":545.414392059553,
-                 "y":223.816377171216
+                 "x":545.414,
+                 "y":223.816
                 },
                 {
                  "gid":4,
@@ -407,8 +365,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":541.278742762614,
-                 "y":257.935483870968
+                 "x":541.279,
+                 "y":257.935
                 },
                 {
                  "gid":4,
@@ -419,10 +377,9 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":571.262200165426,
-                 "y":255.867659222498
+                 "x":571.262,
+                 "y":255.868
                 },
-
                 {
                  "gid":2,
                  "height":32,
@@ -432,9 +389,10 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":578.49958643507,
-                 "y":317.902398676592
+                 "x":578.5,
+                 "y":317.902
                 },
+
                 {
                  "gid":2,
                  "height":32,
@@ -444,20 +402,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":94.6286186931348,
-                 "y":256.901571546733
-                },
-                {
-                 "gid":10,
-                 "height":32,
-                 "id":133,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":-85.921782412894,
-                 "y":222.21000237023
+                 "x":94.6286,
+                 "y":256.902
                 },
                 {
                  "height":0,
@@ -467,8 +413,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":110.354092697438,
-                 "y":44.1416370789752
+                 "x":110.354,
+                 "y":44.1416
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -495,7 +441,7 @@
                         {
                          "name":"needNpcsKilled",
                          "type":"int",
-                         "value":1
+                         "value":2
                         }],
                  "rotation":0,
                  "type":"",
@@ -511,7 +457,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":116,
+ "nextobjectid":117,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",

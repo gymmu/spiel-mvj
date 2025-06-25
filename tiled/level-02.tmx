@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="116">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="117">
  <editorsettings>
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
@@ -97,11 +97,10 @@
    </properties>
   </object>
   <object id="13" name="Poison_flower" gid="9" x="90.2043" y="318.762" width="32" height="32"/>
-  <object id="106" name="Fov_mushroom" gid="10" x="-348.879" y="307.666" width="32" height="32"/>
+  <object id="106" name="Fov_mushroom" gid="10" x="30.4543" y="290.999" width="32" height="32"/>
   <object id="108" name="Fov_mushroom" gid="10" x="390.806" y="221.961" width="32" height="32"/>
   <object id="109" name="Fov_mushroom" gid="10" x="418.949" y="62.0535" width="32" height="32"/>
   <object id="110" name="Poison_flower" gid="9" x="416.391" y="128.575" width="32" height="32"/>
-  <object id="113" gid="15" x="308.933" y="572.479" width="32" height="32"/>
   <object id="118" name="Flower" gid="4" x="568.16" y="184.528" width="32" height="32"/>
   <object id="119" name="Flower" gid="4" x="568.16" y="223.816" width="32" height="32"/>
   <object id="120" name="Flower" gid="4" x="545.414" y="223.816" width="32" height="32"/>
@@ -109,14 +108,13 @@
   <object id="122" name="Flower" gid="4" x="571.262" y="255.868" width="32" height="32"/>
   <object id="123" name="Stone" gid="2" x="578.5" y="317.902" width="32" height="32"/>
   <object id="125" name="Stone" gid="2" x="94.6286" y="256.902" width="32" height="32"/>
-  <object id="133" gid="10" x="-85.9218" y="222.21" width="32" height="32"/>
   <object id="134" name="NPC" x="110.354" y="44.1416"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-03"/>
-    <property name="needNpcsKilled" type="int" value="1"/>
+    <property name="needNpcsKilled" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>

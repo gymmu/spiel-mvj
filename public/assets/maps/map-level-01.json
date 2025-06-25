@@ -27,7 +27,7 @@
          "width":20,
          "x":0,
          "y":0
-        },
+        }, 
         {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -55,7 +55,7 @@
          "width":20,
          "x":0,
          "y":0
-        },
+        }, 
         {
          "draworder":"topdown",
          "id":3,
@@ -71,7 +71,7 @@
                  "width":0,
                  "x":192,
                  "y":288
-                },
+                }, 
                 {
                  "height":0,
                  "id":9,
@@ -88,7 +88,7 @@
          "visible":true,
          "x":0,
          "y":0
-        },
+        }, 
         {
          "draworder":"topdown",
          "id":4,
@@ -104,7 +104,7 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -116,7 +116,7 @@
                  "width":32,
                  "x":160,
                  "y":256
-                },
+                }, 
                 {
                  "gid":3,
                  "height":32,
@@ -127,7 +127,7 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -139,7 +139,7 @@
                  "width":32,
                  "x":320,
                  "y":256
-                },
+                }, 
                 {
                  "gid":3,
                  "height":32,
@@ -150,7 +150,7 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -162,7 +162,7 @@
                  "width":32,
                  "x":544,
                  "y":288
-                },
+                }, 
                 {
                  "gid":4,
                  "height":32,
@@ -173,7 +173,7 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":20
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -185,7 +185,7 @@
                  "width":32,
                  "x":512,
                  "y":320
-                },
+                }, 
                 {
                  "gid":4,
                  "height":32,
@@ -196,7 +196,7 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":20
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -208,7 +208,7 @@
                  "width":32,
                  "x":512,
                  "y":224
-                },
+                }, 
                 {
                  "gid":4,
                  "height":32,
@@ -219,12 +219,12 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":20
-                        },
+                        }, 
                         {
                          "name":"keyName",
                          "type":"string",
                          "value":"level-02"
-                        },
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -236,7 +236,7 @@
                  "width":32,
                  "x":158.343,
                  "y":319.032
-                },
+                }, 
                 {
                  "gid":2,
                  "height":32,
@@ -247,7 +247,7 @@
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        },
+                        }, 
                         {
                          "name":"damageHp",
                          "type":"int",
@@ -265,7 +265,7 @@
          "visible":true,
          "x":0,
          "y":0
-        },
+        }, 
         {
          "draworder":"topdown",
          "id":5,
@@ -281,11 +281,11 @@
                          "name":"goToWorld",
                          "type":"string",
                          "value":"map-level-02"
-                        },
+                        }, 
                         {
-                         "name":"needKey",
+                         "name":"needNpcsKilled",
                          "type":"string",
-                         "value":"level-02"
+                         "value":"1"
                         }],
                  "rotation":0,
                  "type":"",
@@ -327,7 +327,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                },
+                }, 
                 {
                  "id":4,
                  "properties":[
@@ -336,7 +336,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                },
+                }, 
                 {
                  "id":5,
                  "properties":[
@@ -345,7 +345,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                },
+                }, 
                 {
                  "id":7,
                  "properties":[
