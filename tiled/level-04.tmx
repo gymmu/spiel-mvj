@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="6">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="35" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="13">
  <editorsettings>
   <export target="../public/assets/maps/map-level-04.json" format="json"/>
  </editorsettings>
@@ -62,13 +62,14 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="SpawnPoints"/>
- <objectgroup id="7" name="Doors">
-  <object id="1" name="NPC" x="496.287" y="371.881"/>
-  <object id="2" name="NPC" x="656.287" y="370.381"/>
-  <object id="3" name="NPC" x="574.787" y="289.881"/>
-  <object id="4" name="NPC" x="654.787" y="211.381"/>
-  <object id="5" name="NPC" x="497.7" y="209.381"/>
+ <objectgroup id="6" name="SpawnPoints">
+  <object id="7" name="NPC" x="30.6667" y="30.6667"/>
+  <object id="8" name="NPC" x="68" y="29.3333"/>
+  <object id="9" name="NPC" x="110.667" y="29.3333" width="1.33333"/>
+  <object id="10" name="NPC" x="34.6667" y="69.3333" width="1.33333"/>
+  <object id="11" name="NPC" x="72" y="68"/>
+  <object id="12" name="SpawnPlayer" x="121.333" y="62.6667"/>
  </objectgroup>
+ <objectgroup id="7" name="Doors"/>
  <objectgroup id="5" name="Items"/>
 </map>
