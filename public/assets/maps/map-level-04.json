@@ -37,7 +37,7 @@
          "width":35,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 5, 5, 5, 5, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -73,7 +73,7 @@
          "width":35,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "draworder":"topdown",
          "id":6,
@@ -89,7 +89,7 @@
                  "width":0,
                  "x":812.79496591505,
                  "y":141.583639223912
-                }, 
+                },
                 {
                  "height":0,
                  "id":27,
@@ -100,7 +100,7 @@
                  "width":0,
                  "x":846.879916098584,
                  "y":686.942842160461
-                }, 
+                },
                 {
                  "height":0,
                  "id":28,
@@ -111,7 +111,7 @@
                  "width":0,
                  "x":576.822233875197,
                  "y":726.27163083377
-                }, 
+                },
                 {
                  "height":0,
                  "id":29,
@@ -122,7 +122,7 @@
                  "width":0,
                  "x":306.764551651809,
                  "y":173.046670162559
-                }, 
+                },
                 {
                  "height":0,
                  "id":30,
@@ -133,7 +133,7 @@
                  "width":0,
                  "x":243.838489774515,
                  "y":686.942842160461
-                }, 
+                },
                 {
                  "height":0,
                  "id":31,
@@ -150,7 +150,7 @@
          "visible":true,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "draworder":"topdown",
          "id":7,
@@ -161,6 +161,17 @@
                  "height":32,
                  "id":18,
                  "name":"Cave",
+                 "properties":[
+                        {
+                         "name":"goToWorld",
+                         "type":"string",
+                         "value":"map-level-01"
+                        },
+                        {
+                         "name":"needNpcsKilled",
+                         "type":"int",
+                         "value":5
+                        }],
                  "rotation":90,
                  "type":"",
                  "visible":true,
@@ -173,7 +184,7 @@
          "visible":true,
          "x":0,
          "y":0
-        }, 
+        },
         {
          "draworder":"topdown",
          "id":5,
@@ -190,7 +201,7 @@
                  "width":32,
                  "x":478.767,
                  "y":60.0057
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -202,7 +213,7 @@
                  "width":32,
                  "x":513.258,
                  "y":93.3073
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -214,7 +225,7 @@
                  "width":32,
                  "x":512.069,
                  "y":61.1951
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -226,7 +237,7 @@
                  "width":32,
                  "x":545.37,
                  "y":61.1951
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -238,7 +249,7 @@
                  "width":32,
                  "x":582.24,
                  "y":60.0057
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -250,7 +261,7 @@
                  "width":32,
                  "x":608.405,
                  "y":60.0057
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -262,7 +273,7 @@
                  "width":32,
                  "x":634.571,
                  "y":58.8164
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -274,7 +285,7 @@
                  "width":32,
                  "x":610.784,
                  "y":94.4967
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -286,7 +297,7 @@
                  "width":32,
                  "x":588.186,
                  "y":123.041
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -298,7 +309,7 @@
                  "width":32,
                  "x":538.234,
                  "y":123.041
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -310,7 +321,7 @@
                  "width":32,
                  "x":541.802,
                  "y":157.532
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -322,7 +333,7 @@
                  "width":32,
                  "x":540.613,
                  "y":182.508
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -334,7 +345,7 @@
                  "width":32,
                  "x":577.482,
                  "y":149.206
-                }, 
+                },
                 {
                  "gid":3,
                  "height":32,
@@ -346,7 +357,7 @@
                  "width":32,
                  "x":577.482,
                  "y":182.508
-                }, 
+                },
                 {
                  "gid":10,
                  "height":32,
@@ -358,6 +369,427 @@
                  "width":32,
                  "x":559.93,
                  "y":183.011
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":19,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":324,
+                 "y":162
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":20,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":292,
+                 "y":161
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":21,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":262,
+                 "y":163
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":22,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":265,
+                 "y":193
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":23,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":262,
+                 "y":223
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":24,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":772,
+                 "y":135
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":25,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":804,
+                 "y":132
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":26,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":839,
+                 "y":134
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":27,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":833,
+                 "y":159
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":28,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":835,
+                 "y":194
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":29,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":191,
+                 "y":645
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":30,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":226,
+                 "y":644
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":31,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":195,
+                 "y":676
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":32,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":195,
+                 "y":709
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":33,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":198,
+                 "y":747
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":34,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":197,
+                 "y":772
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":35,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":233,
+                 "y":773
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":36,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":262,
+                 "y":771
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":37,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":293,
+                 "y":770
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":38,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":326,
+                 "y":771
+                },
+
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":39,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":515,
+                 "y":769
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":40,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":612,
+                 "y":770
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":41,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":575,
+                 "y":766
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":42,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":541,
+                 "y":768
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":43,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":545,
+                 "y":732
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":44,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":573,
+                 "y":738
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":45,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":804,
+                 "y":736
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":46,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":838,
+                 "y":737
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":47,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":871,
+                 "y":738
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":48,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":864,
+                 "y":704
+                },
+                {
+                 "gid":11,
+                 "height":32,
+                 "id":49,
+                 "name":"Heal_flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":867,
+                 "y":672
+                },
+                {
+                 "gid":4,
+                 "height":32,
+                 "id":50,
+                 "name":"Flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":541,
+                 "y":415
+                },
+                {
+                 "gid":4,
+                 "height":32,
+                 "id":51,
+                 "name":"Flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":573,
+                 "y":416
+                },
+                {
+                 "gid":4,
+                 "height":32,
+                 "id":52,
+                 "name":"Flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":541,
+                 "y":448
+                },
+                {
+                 "gid":4,
+                 "height":32,
+                 "id":53,
+                 "name":"Flower",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":573,
+                 "y":448
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -366,7 +798,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":33,
+ "nextobjectid":54,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -392,7 +824,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                }, 
+                },
                 {
                  "id":4,
                  "properties":[
@@ -401,7 +833,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                }, 
+                },
                 {
                  "id":5,
                  "properties":[
@@ -410,7 +842,7 @@
                          "type":"bool",
                          "value":true
                         }]
-                }, 
+                },
                 {
                  "id":7,
                  "properties":[
