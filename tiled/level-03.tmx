@@ -169,7 +169,7 @@
  <objectgroup id="5" name="Doors">
   <object id="2" name="Cave" gid="7" x="1472" y="32" width="32" height="32">
    <properties>
-    <property name="goToWorld" value="map-level-01"/>
+    <property name="goToWorld" value="map-level-04"/>
    </properties>
   </object>
  </objectgroup>

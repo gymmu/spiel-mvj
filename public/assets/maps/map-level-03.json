@@ -1138,8 +1138,8 @@
                  "x":1471.5,
                  "y":64
                 }],
-         "offsetx":-2.11363636363649,
-         "offsety":9.80303030303031,
+         "offsetx":-2.11364,
+         "offsety":9.80303,
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1160,7 +1160,7 @@
                         {
                          "name":"goToWorld",
                          "type":"string",
-                         "value":"map-level-01"
+                         "value":"map-level-04"
                         }],
                  "rotation":0,
                  "type":"",
