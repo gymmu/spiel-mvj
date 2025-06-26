@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="156">
+ <editorsettings>
+  <export target="../public/assets/maps/map-level-05.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="tileset.tsx"/>
+ <layer id="1" name="Background" width="25" height="25">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="2" name="Obstacles" width="25" height="25">
+  <data encoding="csv">
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+6,6,6,5,5,5,2,2,2,2,6,5,6,5,6,2,2,2,2,5,5,5,6,6,6,
+6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,
+6,0,6,6,5,5,2,2,2,6,6,5,6,5,6,6,2,2,2,5,5,6,6,0,6,
+5,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,5,
+5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,
+5,0,5,0,0,0,0,0,6,6,6,6,0,5,5,5,5,0,0,0,0,0,5,0,5,
+2,0,2,0,0,0,0,0,6,0,0,0,0,5,0,0,0,0,0,0,0,0,2,0,2,
+2,0,2,0,0,0,0,0,6,0,6,6,0,5,0,5,5,0,0,0,0,0,2,0,2,
+2,0,2,0,0,0,0,0,6,0,0,6,0,5,0,0,5,0,0,0,0,0,2,0,2,
+2,0,5,0,0,0,0,0,6,6,6,6,0,5,5,5,5,0,0,0,0,0,5,0,2,
+5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,
+6,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,6,
+5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,
+2,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,2,
+2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,
+2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,
+2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,
+5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,
+5,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,5,
+5,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,5,
+6,0,6,6,5,5,2,2,2,6,6,5,6,5,6,6,2,2,2,5,5,6,6,0,6,
+6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,
+6,6,6,5,5,5,2,2,2,2,6,5,6,5,6,2,2,2,2,5,5,5,6,6,6,
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+</data>
+ </layer>
+ <objectgroup id="3" name="SpawnPoints">
+  <object id="1" name="SpawnPlayer" x="402.182" y="274.117"/>
+  <object id="21" name="NPC" x="48.0944" y="78.9474"/>
+  <object id="22" name="NPC" x="111.615" y="78.0399"/>
+  <object id="23" name="NPC" x="175.136" y="78.9474"/>
+  <object id="29" name="NPC" x="238.657" y="80.7623" height="0.907441"/>
+  <object id="30" name="NPC" x="303.993" y="84.392"/>
+  <object id="31" name="NPC" x="371.143" y="79.8548"/>
+  <object id="32" name="NPC" x="431.942" y="81.6697"/>
+  <object id="33" name="NPC" x="498.185" y="79.8548"/>
+  <object id="34" name="NPC" x="561.706" y="79.8548"/>
+  <object id="35" name="NPC" x="624.319" y="82.5771"/>
+  <object id="36" name="NPC" x="688.748" y="79.8548"/>
+  <object id="37" name="NPC" x="751.361" y="79.8548"/>
+  <object id="38" name="NPC" x="751.361" y="144.283"/>
+  <object id="39" name="NPC" x="751.361" y="206.897" height="0.907441"/>
+  <object id="40" name="NPC" x="754.083" y="269.51"/>
+  <object id="41" name="NPC" x="751.361" y="336.661" width="0.907441" height="6.35209"/>
+  <object id="42" name="NPC" x="754.991" y="399.274"/>
+  <object id="43" name="NPC" x="753.176" y="461.887"/>
+  <object id="44" name="NPC" x="750.454" y="527.223"/>
+  <object id="45" name="NPC" x="752.269" y="591.652"/>
+  <object id="46" name="NPC" x="754.083" y="655.172"/>
+  <object id="47" name="NPC" x="752.269" y="715.064"/>
+  <object id="48" name="NPC" x="688.748" y="719.601"/>
+  <object id="49" name="NPC" x="627.042" y="717.786"/>
+  <object id="50" name="NPC" x="556.261" y="719.601"/>
+  <object id="51" name="NPC" x="492.74" y="719.601"/>
+  <object id="52" name="NPC" x="431.034" y="718.693"/>
+  <object id="53" name="NPC" x="370.236" y="718.693"/>
+  <object id="54" name="NPC" x="304.9" y="719.601"/>
+  <object id="55" name="NPC" x="239.564" y="715.971"/>
+  <object id="56" name="NPC" x="176.044" y="716.878"/>
+  <object id="57" name="NPC" x="113.43" y="720.508"/>
+  <object id="58" name="NPC" x="48.0944" y="716.878"/>
+  <object id="59" name="NPC" x="47.1869" y="654.265"/>
+  <object id="60" name="NPC" x="48.0944" y="592.559"/>
+  <object id="61" name="NPC" x="46.2795" y="525.408"/>
+  <object id="62" name="NPC" x="46.2795" y="463.702"/>
+  <object id="63" name="NPC" x="48.0944" y="396.552"/>
+  <object id="64" name="NPC" x="46.2795" y="338.475"/>
+  <object id="65" name="NPC" x="45.3721" y="271.325" height="1.81488"/>
+  <object id="66" name="NPC" x="48.0944" y="205.989" height="0.907441"/>
+  <object id="67" name="NPC" x="49.9093" y="140.653"/>
+ </objectgroup>
+ <objectgroup id="4" name="Doors">
+  <object id="155" name="Cave" gid="7" x="387" y="478" width="32" height="32">
+   <properties>
+    <property name="goToWorld" value="map-level-01"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Items">
+  <object id="68" name="Flower" gid="4" x="94.6667" y="160.667" width="32" height="32"/>
+  <object id="69" name="Flower" gid="4" x="158" y="160.667" width="32" height="32"/>
+  <object id="70" name="Flower" gid="4" x="220" y="158.667" width="32" height="32"/>
+  <object id="71" name="Flower" gid="4" x="285.333" y="162" width="32" height="32"/>
+  <object id="72" name="Flower" gid="4" x="350.667" y="160.667" width="32" height="32"/>
+  <object id="73" name="Flower" gid="4" x="414" y="160.667" width="32" height="32"/>
+  <object id="74" name="Flower" gid="4" x="478.667" y="157.333" width="32" height="32"/>
+  <object id="75" name="Flower" gid="4" x="541.333" y="160.667" width="32" height="32"/>
+  <object id="76" name="Flower" gid="4" x="603.333" y="160.667" width="32" height="32"/>
+  <object id="77" name="Flower" gid="4" x="668" y="159.333" width="32" height="32"/>
+  <object id="78" name="Flower" gid="4" x="668.667" y="225.333" width="32" height="32"/>
+  <object id="79" name="Flower" gid="4" x="670" y="286.667" width="32" height="32"/>
+  <object id="80" name="Flower" gid="4" x="669.333" y="352.667" width="32" height="32"/>
+  <object id="81" name="Flower" gid="4" x="668.667" y="415.333" width="32" height="32"/>
+  <object id="82" name="Flower" gid="4" x="668" y="480" width="32" height="32"/>
+  <object id="83" name="Flower" gid="4" x="669.333" y="542" width="32" height="32"/>
+  <object id="84" name="Flower" gid="4" x="668.667" y="609.333" width="32" height="32"/>
+  <object id="85" name="Flower" gid="4" x="671.333" y="670.667" width="32" height="32"/>
+  <object id="86" name="Flower" gid="4" x="606.667" y="669.333" width="32" height="32"/>
+  <object id="87" name="Flower" gid="4" x="541.333" y="670.667" width="32" height="32"/>
+  <object id="88" name="Flower" gid="4" x="478" y="670" width="32" height="32"/>
+  <object id="102" name="Flower" gid="4" x="412.667" y="673.333" width="32" height="32"/>
+  <object id="103" name="Flower" gid="4" x="349.333" y="670" width="32" height="32"/>
+  <object id="104" name="Flower" gid="4" x="284.667" y="670.667" width="32" height="32"/>
+  <object id="105" name="Flower" gid="4" x="223.333" y="672" width="32" height="32"/>
+  <object id="106" name="Flower" gid="4" x="158.667" y="668" width="32" height="32"/>
+  <object id="107" name="Flower" gid="4" x="93.3333" y="671.333" width="32" height="32"/>
+  <object id="108" name="Flower" gid="4" x="93.3333" y="607.333" width="32" height="32"/>
+  <object id="109" name="Flower" gid="4" x="94" y="544" width="32" height="32"/>
+  <object id="110" name="Flower" gid="4" x="94" y="478.667" width="32" height="32"/>
+  <object id="111" name="Flower" gid="4" x="94.6667" y="416.667" width="32" height="32"/>
+  <object id="112" name="Flower" gid="4" x="92.6667" y="350" width="32" height="32"/>
+  <object id="113" name="Flower" gid="4" x="92" y="288" width="32" height="32"/>
+  <object id="114" name="Flower" gid="4" x="92.6667" y="222.667" width="32" height="32"/>
+  <object id="115" name="Mushroom" gid="3" x="638" y="160.667" width="32" height="32"/>
+  <object id="116" name="Mushroom" gid="3" x="575.333" y="158.667" width="32" height="32"/>
+  <object id="117" name="Mushroom" gid="3" x="510.667" y="160" width="32" height="32"/>
+  <object id="118" name="Mushroom" gid="3" x="447.333" y="159.333" width="32" height="32"/>
+  <object id="119" name="Mushroom" gid="3" x="382" y="160" width="32" height="32"/>
+  <object id="120" name="Mushroom" gid="3" x="319.333" y="160" width="32" height="32"/>
+  <object id="121" name="Mushroom" gid="3" x="255.333" y="161.333" width="32" height="32"/>
+  <object id="122" name="Mushroom" gid="3" x="188" y="157.333" width="32" height="32"/>
+  <object id="123" name="Mushroom" gid="3" x="126.667" y="161.333" width="32" height="32"/>
+  <object id="124" name="Mushroom" gid="3" x="92.6667" y="192.667" width="32" height="32"/>
+  <object id="125" name="Mushroom" gid="3" x="670.667" y="191.333" width="32" height="32"/>
+  <object id="126" name="Mushroom" gid="3" x="670" y="255.333" width="32" height="32"/>
+  <object id="127" name="Mushroom" gid="3" x="92" y="256" width="32" height="32"/>
+  <object id="128" name="Mushroom" gid="3" x="92" y="320.667" width="32" height="32"/>
+  <object id="129" name="Mushroom" gid="3" x="671.333" y="319.333" width="32" height="32"/>
+  <object id="130" name="Mushroom" gid="3" x="670" y="381.333" width="32" height="32"/>
+  <object id="131" name="Mushroom" gid="3" x="668" y="446" width="32" height="32"/>
+  <object id="132" name="Mushroom" gid="3" x="669.333" y="512" width="32" height="32"/>
+  <object id="133" name="Mushroom" gid="3" x="672.667" y="572.667" width="32" height="32"/>
+  <object id="134" name="Mushroom" gid="3" x="669.333" y="638" width="32" height="32"/>
+  <object id="135" name="Mushroom" gid="3" x="93.3333" y="318.667" width="32" height="32"/>
+  <object id="136" name="Mushroom" gid="3" x="96" y="382" width="32" height="32"/>
+  <object id="137" name="Mushroom" gid="3" x="94" y="446.667" width="32" height="32"/>
+  <object id="138" name="Mushroom" gid="3" x="95.3333" y="512.667" width="32" height="32"/>
+  <object id="139" name="Mushroom" gid="3" x="94.6667" y="575.333" width="32" height="32"/>
+  <object id="140" name="Mushroom" gid="3" x="94.6667" y="638.667" width="32" height="32"/>
+  <object id="141" name="Mushroom" gid="3" x="127.333" y="672" width="32" height="32"/>
+  <object id="142" name="Mushroom" gid="3" x="190.667" y="673.333" width="32" height="32"/>
+  <object id="143" name="Mushroom" gid="3" x="256" y="672.667" width="32" height="32"/>
+  <object id="144" name="Mushroom" gid="3" x="316.667" y="670" width="32" height="32"/>
+  <object id="145" name="Mushroom" gid="3" x="384" y="673.333" width="32" height="32"/>
+  <object id="146" name="Mushroom" gid="3" x="447.333" y="672.667" width="32" height="32"/>
+  <object id="147" name="Mushroom" gid="3" x="514" y="674.667" width="32" height="32"/>
+  <object id="148" name="Mushroom" gid="3" x="579.333" y="672" width="32" height="32"/>
+  <object id="149" name="Mushroom" gid="3" x="638.667" y="671.333" width="32" height="32"/>
+ </objectgroup>
+</map>

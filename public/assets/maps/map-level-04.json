@@ -87,19 +87,25 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":812.79496591505,
-                 "y":141.583639223912
+                 "x":812.795,
+                 "y":141.584
                 },
                 {
                  "height":0,
                  "id":27,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc2"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":846.879916098584,
-                 "y":686.942842160461
+                 "x":846.88,
+                 "y":686.943
                 },
                 {
                  "height":0,
@@ -109,19 +115,25 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":576.822233875197,
-                 "y":726.27163083377
+                 "x":576.822,
+                 "y":726.272
                 },
                 {
                  "height":0,
                  "id":29,
                  "name":"NPC",
+                 "properties":[
+                        {
+                         "name":"skin",
+                         "type":"string",
+                         "value":"npc2"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":306.764551651809,
-                 "y":173.046670162559
+                 "x":306.765,
+                 "y":173.047
                 },
                 {
                  "height":0,
@@ -131,8 +143,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":243.838489774515,
-                 "y":686.942842160461
+                 "x":243.838,
+                 "y":686.943
                 },
                 {
                  "height":0,
@@ -142,8 +154,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":574.695684249354,
-                 "y":69.3471043895242
+                 "x":574.696,
+                 "y":69.3471
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -165,7 +177,7 @@
                         {
                          "name":"goToWorld",
                          "type":"string",
-                         "value":"map-level-01"
+                         "value":"map-level-05"
                         },
                         {
                          "name":"needNpcsKilled",
