@@ -85,6 +85,13 @@ export default class Base2DScene extends Phaser.Scene {
     // Erstellt die Karte so wie sie in `mapKey` definiert ist.
     this.map = this.make.tilemap({ key: mapKey })
 
+    this.physics.world.setBounds(
+      0,
+      0,
+      this.map.widthInPixels,
+      this.map.heightInPixels,
+    )
+
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
     this.tiles = this.map.addTilesetImage("tileset")
 
