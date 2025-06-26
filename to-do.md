@@ -1,2 +1,2 @@
-4. map besser gestalten
-alle bugs mit der FOV beseitigen
+-npc Schlüssel für alle levels
+-add alle npcs

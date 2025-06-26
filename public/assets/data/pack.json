@@ -71,6 +71,12 @@
         "key": "map-level-03",
         "url": "map-level-03.json"
       }
+      ,
+      {
+        "type": "tilemapTiledJSON",
+        "key": "map-level-04",
+        "url": "map-level-04.json"
+      }
     ]
   },
   {
