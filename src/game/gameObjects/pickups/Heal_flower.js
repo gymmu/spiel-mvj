@@ -7,7 +7,7 @@ export default class HealFlower extends StaticObject {
 
     this.setOrigin(0, 0)
     this.setSize(24, 32)
-    this.setOffset(8, 0)
+    this.setOffset(0, 0)
 
     this.name = "Heal_flower"
   }
@@ -25,4 +25,4 @@ export default class HealFlower extends StaticObject {
 }
 
 // Registriere das Flower-Objekt automatisch beim Import
-registerGameObject("Heal_flower", Heal_flower)
+registerGameObject("Heal_flower", HealFlower)
