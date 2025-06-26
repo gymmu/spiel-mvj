@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: darkslategrey;
+  background-color: rgb(42, 3, 57);
   color: white;
   padding: 0;
   margin: 0;
@@ -31,7 +31,7 @@ main > section {
 }
 
 main > section:nth-child(2n-1) {
-  background-color: black;
+  background-color: rgb(51, 1, 61);
 }
 
 main > section > h2 {
@@ -40,7 +40,7 @@ main > section > h2 {
 
 .start-btn {
   padding: 1.5rem;
-  background-color: forestgreen;
+  background-color: rgb(111, 6, 71);
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -48,7 +48,7 @@ main > section > h2 {
 }
 
 .start-btn:hover {
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .margin-tb {
