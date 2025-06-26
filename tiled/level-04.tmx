@@ -73,7 +73,7 @@
  <objectgroup id="7" name="Doors">
   <object id="18" name="Cave" gid="7" x="798.895" y="418.95" width="32" height="32" rotation="90">
    <properties>
-    <property name="goToWorld" value="map-level-01"/>
+    <property name="goToWorld" value="map-level-05"/>
     <property name="needNpcsKilled" type="int" value="5"/>
    </properties>
   </object>

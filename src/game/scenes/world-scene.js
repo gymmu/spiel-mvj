@@ -12,7 +12,7 @@ import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
 import "../gameObjects/pickups/Poison_flower"
 import "../gameObjects/pickups/Fov_mushroom"
-
+import "../gameObjects/pickups/Heal_flower"
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
  * automatisch zu erstellen.

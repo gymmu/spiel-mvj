@@ -1,15 +1,15 @@
 import StaticObject from "../staticObject"
 import { registerGameObject } from "../registry"
 
-export default class Flower extends StaticObject {
+export default class HealFlower extends StaticObject {
   constructor(scene, x, y, properties) {
-    super(scene, x, y, "pickups", "flower", properties)
+    super(scene, x, y, "pickups", "Heal_flower", properties)
 
     this.setOrigin(0, 0)
     this.setSize(24, 32)
     this.setOffset(8, 0)
 
-    this.name = "flower"
+    this.name = "Heal_flower"
   }
 
   onCollide(player) {
@@ -25,4 +25,4 @@ export default class Flower extends StaticObject {
 }
 
 // Registriere das Flower-Objekt automatisch beim Import
-registerGameObject("Flower", Flower)
+registerGameObject("Heal_flower", Heal_flower)
