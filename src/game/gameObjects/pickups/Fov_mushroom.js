@@ -20,7 +20,7 @@ export default class FovMushroom extends StaticObject {
     }
 
     if (this.scene.cameraManager) {
-      this.scene.cameraManager.cameraMaskRadius -= 150
+      this.scene.cameraManager.cameraMaskRadius -= 100
       this.scene.cameraManager.setCameraMask()
     }
     this.destroy()
