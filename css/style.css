@@ -9,6 +9,12 @@ body {
   color: white;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  max-width: 900px;
+  border-radius: 12pt;
 }
 
 h1 {
@@ -70,9 +76,10 @@ main > section > h2 {
 
 .controls-row {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  margin-left: 150px;
 }
 
 .text-with-image {
