@@ -1,7 +1,7 @@
 {
-  "name": "phaser-playground",
-  "homepage": "https://gymmu.github.io/phaser-playground",
-  "version": "0.1.0",
+  "name": "spiel-mvj",
+  "homepage": "https://gymmu.github.io/spiel-mvj",
+  "version": "0.3.0",
   "description": "",
   "type": "module",
   "scripts": {

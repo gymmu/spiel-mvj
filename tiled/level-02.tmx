@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="13">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="118">
  <editorsettings>
   <export target="../public/assets/maps/map-level-02.json" format="json"/>
  </editorsettings>
@@ -25,25 +25,31 @@
  </layer>
  <layer id="2" name="Obstacles" width="20" height="15">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,5,5,8,8,8,8,8,0,8,6,6,0,
-0,0,0,0,0,0,0,0,5,5,5,5,0,0,0,0,0,6,6,0,
-0,0,0,0,0,0,0,0,5,5,6,5,0,0,0,6,2,6,6,0,
-0,0,0,0,0,0,0,0,5,6,5,5,6,0,0,6,6,6,6,0,
-0,0,0,0,0,0,0,0,5,5,6,5,5,0,0,2,6,6,6,0,
-0,0,0,0,0,0,0,0,5,6,5,6,5,0,0,6,6,6,0,0,
-0,0,0,0,0,0,0,0,5,6,2,0,0,0,0,6,6,0,0,0,
-6,6,6,6,6,6,0,0,5,5,6,0,0,0,0,2,6,0,0,0,
-6,0,0,0,0,6,6,6,2,2,2,0,0,0,0,6,2,2,0,0,
-5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,2,2,0,0,
-2,0,2,5,5,5,5,5,6,6,6,6,6,6,6,6,2,0,0,0,
-2,0,2,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-2,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6,6,6,6,6,6,6,6,5,5,8,8,8,8,8,0,8,6,6,5,
+6,6,0,0,0,6,6,6,5,5,5,5,0,0,0,0,0,6,6,5,
+6,0,0,6,0,0,6,6,5,5,6,5,0,0,0,6,2,6,6,5,
+6,0,6,6,6,0,6,6,5,6,5,5,6,0,0,6,6,6,6,5,
+6,0,0,6,0,0,6,6,5,5,6,5,5,0,0,2,6,6,6,5,
+6,0,0,0,0,0,6,6,5,6,5,6,5,0,0,6,6,6,0,5,
+6,6,0,0,0,6,6,6,5,6,2,0,0,0,0,6,6,0,0,5,
+6,6,6,0,6,5,5,5,5,5,6,0,0,0,0,2,6,0,0,5,
+6,0,0,0,0,2,2,2,2,2,2,0,0,0,0,6,2,2,0,5,
+5,0,0,0,0,0,0,5,2,0,0,0,0,0,0,6,2,2,0,5,
+2,0,0,0,0,5,0,5,2,0,0,0,0,0,0,0,0,0,0,5,
+2,0,2,0,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,5,
+2,0,2,0,0,5,0,0,0,6,6,6,6,6,6,6,6,6,6,5,
+2,0,5,5,5,5,5,5,6,6,6,6,6,6,6,6,6,6,6,5,
+2,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 </data>
  </layer>
  <objectgroup id="3" name="SpawnPoints">
   <object id="12" name="SpawnPlayer" x="48" y="416"/>
+  <object id="114" name="NPC" x="463.5" y="208">
+   <properties>
+    <property name="skin" value="npc2"/>
+   </properties>
+  </object>
+  <object id="117" name="NPC" x="99.7985" y="40.3032"/>
  </objectgroup>
  <objectgroup id="4" name="Items">
   <object id="2" name="Mushroom" gid="3" x="448" y="288" width="32" height="32">
@@ -91,16 +97,24 @@
     <property name="restoreHp" type="int" value="10"/>
    </properties>
   </object>
-  <object id="11" name="Flower" gid="4" x="32" y="288" width="32" height="32">
-   <properties>
-    <property name="restoreHp" type="int" value="10"/>
-   </properties>
-  </object>
+  <object id="13" name="Poison_flower" gid="9" x="90.2043" y="318.762" width="32" height="32"/>
+  <object id="106" name="Fov_mushroom" gid="10" x="30.4543" y="290.999" width="32" height="32"/>
+  <object id="108" name="Fov_mushroom" gid="10" x="390.806" y="221.961" width="32" height="32"/>
+  <object id="109" name="Fov_mushroom" gid="10" x="418.949" y="62.0535" width="32" height="32"/>
+  <object id="110" name="Poison_flower" gid="9" x="416.391" y="128.575" width="32" height="32"/>
+  <object id="118" name="Flower" gid="4" x="568.16" y="184.528" width="32" height="32"/>
+  <object id="119" name="Flower" gid="4" x="568.16" y="223.816" width="32" height="32"/>
+  <object id="120" name="Flower" gid="4" x="545.414" y="223.816" width="32" height="32"/>
+  <object id="121" name="Flower" gid="4" x="541.279" y="257.935" width="32" height="32"/>
+  <object id="122" name="Flower" gid="4" x="571.262" y="255.868" width="32" height="32"/>
+  <object id="123" name="Stone" gid="2" x="578.5" y="317.902" width="32" height="32"/>
+  <object id="125" name="Stone" gid="2" x="94.6286" y="256.902" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="1" name="Cave" gid="7" x="480" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="map-level-03"/>
+    <property name="needNpcsKilled" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>

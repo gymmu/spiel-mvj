@@ -26,6 +26,15 @@
         }
       },
       {
+        "type": "spritesheet",
+        "key": "npc2",
+        "url": "npc2.png",
+        "frameConfig": {
+          "frameWidth": 32,
+          "frameHeight": 32
+        }
+      },
+      {
         "type": "animation",
         "key": "anims",
         "url": "data/animations.json"
@@ -61,6 +70,17 @@
         "type": "tilemapTiledJSON",
         "key": "map-level-03",
         "url": "map-level-03.json"
+      }
+      ,
+      {
+        "type": "tilemapTiledJSON",
+        "key": "map-level-04",
+        "url": "map-level-04.json"
+      },
+      {
+        "type": "tilemapTiledJSON",
+        "key": "map-level-05",
+        "url": "map-level-05.json"
       }
     ]
   },

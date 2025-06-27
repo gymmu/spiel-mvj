@@ -2,6 +2,7 @@ import Phaser from "phaser"
 import EVENTS from "../../events"
 import Projectile from "../projectile"
 import InteractionObject from "../interactionObject"
+import HpBar from "../hpbar"
 
 /**
  * Speichert den Spielerstatus in der Registry.
@@ -27,7 +28,7 @@ export function savePlayerState(scene, player) {
 export function loadPlayerState(scene, map) {
   // Spielerstatus aus Registry laden oder Standardwerte setzen
   const savedPlayerState = scene.registry.get("playerState") || {
-    hp: 10,
+    hp: 100,
     inventory: new Array(6).fill(null),
     keys: {},
   }
@@ -82,15 +83,18 @@ export function createPlayer(scene, map) {
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
-  hp = 10
+  hp = 100
   maxHp = 100
   speed = 100
+  attackPower = 5
   baseSpeed = 100
   gotHit = false
   isAttacking = false
-  attackSpeed = 1500
+  attackSpeed = 300
+  attackPower = 5
   inventory = new Array(6).fill(null) // Inventar mit 6 Slots initialisieren
   lastDirection = { x: 0, y: 1 } // Default: down
+  npcsKilled=0
 
   constructor(scene, x, y) {
     super(scene, x, y, "player")
@@ -102,6 +106,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.setOffset(4, 8)
 
     this.setControls()
+
+    // HP bar component
+    this.hpBar = new HpBar(this.scene, {
+      width: 28,
+      height: 5,
+      offsetY: -20,
+      depth: 10,
+    })
+    this.hpBar.setMaxHp(this.maxHp)
+    this.hpBar.setHp(this.hp)
+    this.hpBar.setPosition(this.x, this.y - this.height / 2)
 
     // Hier schicken wir ein Ereignis los. Phaser schnappt das auf, und führt
     // die Funktion aus, die beim Emitter von "update-hp" definiert wurde. So
@@ -276,7 +291,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Wenn die Richtung nicht 0 ist, dann erstellen wir ein Projectile
       if (dir.lengthSq() > 0) {
-        new Projectile(this.scene, this.x, this.y, dir)
+        new Projectile(this.scene, this.x, this.y, dir, 300, this.attackPower)
       }
     }
 
@@ -287,6 +302,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     } else {
       // Setze die Farbe des Spielers auf normal
       this.tint = 0xffffff
+    }
+
+    // Update HP bar position and value
+    if (this.hpBar) {
+      this.hpBar.setHp(this.hp)
+      this.hpBar.setMaxHp(this.maxHp)
+      this.hpBar.setPosition(this.x, this.y - this.height / 2)
     }
   }
 
@@ -304,6 +326,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp = this.hp + value
     if (this.hp > this.maxHp) {
       this.hp = this.maxHp
+    }
+
+    // Update HP bar
+    if (this.hpBar) {
+      this.hpBar.setHp(this.hp)
     }
 
     // Die Lebenspunkte des Spielers wurden verändert, also schicken wir das
@@ -331,6 +358,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Restart the same scene again
       this.scene.scene.start("world", { map: levelKey })
+    }
+
+    // Update HP bar
+    if (this.hpBar) {
+      this.hpBar.setHp(this.hp)
     }
 
     // Gleich wie bei `heal()`
@@ -400,5 +432,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const itemClass = item.constructor
     const droppedItem = new itemClass(this.scene, x + 32, y, item.props || [])
     this.scene.items.add(droppedItem)
+  }
+
+  addBuff(){
+    this.attackPower *=2
   }
 }

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="4">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="88">
+ <editorsettings>
+  <export target="level-03..tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
  <layer id="1" name="Background" width="50" height="30">
   <data encoding="csv">
@@ -72,17 +75,101 @@
  <objectgroup id="3" name="SpawnPoints">
   <object id="1" name="SpawnPlayer" x="176" y="80"/>
  </objectgroup>
- <objectgroup id="4" name="Items">
+ <objectgroup id="4" name="Items" offsetx="-2.11364" offsety="9.80303">
   <object id="3" name="Mushroom" gid="3" x="1504" y="64" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="100"/>
    </properties>
   </object>
+  <object id="4" name="Mushroom" gid="3" x="159.5" y="124.5" width="32" height="32"/>
+  <object id="5" name="Mushroom" gid="3" x="158.5" y="161" width="32" height="32"/>
+  <object id="6" name="Mushroom" gid="3" x="159" y="192.5" width="32" height="32"/>
+  <object id="7" name="Mushroom" gid="3" x="159" y="224" width="32" height="32"/>
+  <object id="8" name="Mushroom" gid="3" x="160.5" y="258" width="32" height="32"/>
+  <object id="9" name="Mushroom" gid="3" x="159.5" y="285.5" width="32" height="32"/>
+  <object id="10" name="Mushroom" gid="3" x="160" y="319" width="32" height="32"/>
+  <object id="11" name="Mushroom" gid="3" x="159.5" y="354" width="32" height="32"/>
+  <object id="12" name="Mushroom" gid="3" x="165.5" y="384" width="32" height="32"/>
+  <object id="13" name="Mushroom" gid="3" x="161.5" y="418.5" width="32" height="32"/>
+  <object id="14" name="Mushroom" gid="3" x="169.5" y="388.5" width="32" height="32"/>
+  <object id="15" name="Mushroom" gid="3" x="159" y="451" width="32" height="32"/>
+  <object id="16" name="Mushroom" gid="3" x="158.5" y="484" width="32" height="32"/>
+  <object id="17" name="Mushroom" gid="3" x="160.5" y="519.5" width="32" height="32"/>
+  <object id="18" name="Mushroom" gid="3" x="161.5" y="549.5" width="32" height="32"/>
+  <object id="19" name="Mushroom" gid="3" x="159.5" y="572" width="32" height="32"/>
+  <object id="20" name="Mushroom" gid="3" x="194" y="572" width="32" height="32"/>
+  <object id="21" name="Mushroom" gid="3" x="191.5" y="607.5" width="32" height="32"/>
+  <object id="22" name="Mushroom" gid="3" x="192" y="643" width="32" height="32"/>
+  <object id="23" name="Mushroom" gid="3" x="191" y="675.5" width="32" height="32"/>
+  <object id="24" name="Mushroom" gid="3" x="192" y="706.5" width="32" height="32"/>
+  <object id="25" name="Mushroom" gid="3" x="190" y="736" width="32" height="32"/>
+  <object id="26" name="Mushroom" gid="3" x="224.5" y="738.5" width="32" height="32"/>
+  <object id="27" name="Mushroom" gid="3" x="256" y="737.5" width="32" height="32"/>
+  <object id="28" name="Mushroom" gid="3" x="290" y="737" width="32" height="32"/>
+  <object id="29" name="Mushroom" gid="3" x="323" y="737" width="32" height="32"/>
+  <object id="30" name="Mushroom" gid="3" x="355" y="736" width="32" height="32"/>
+  <object id="31" name="Mushroom" gid="3" x="385" y="740" width="32" height="32"/>
+  <object id="32" name="Mushroom" gid="3" x="417" y="737.5" width="32" height="32"/>
+  <object id="33" name="Mushroom" gid="3" x="450" y="737" width="32" height="32"/>
+  <object id="34" name="Mushroom" gid="3" x="482.5" y="741.5" width="32" height="32"/>
+  <object id="35" name="Mushroom" gid="3" x="518" y="734.5" width="32" height="32"/>
+  <object id="36" name="Mushroom" gid="3" x="547.5" y="725.5" width="32" height="32"/>
+  <object id="37" name="Mushroom" gid="3" x="549" y="705" width="32" height="32"/>
+  <object id="38" name="Mushroom" gid="3" x="579.5" y="703.5" width="32" height="32"/>
+  <object id="39" name="Mushroom" gid="3" x="577" y="670.5" width="32" height="32"/>
+  <object id="40" name="Mushroom" gid="3" x="582" y="639.5" width="32" height="32"/>
+  <object id="41" name="Mushroom" gid="3" x="607.5" y="638" width="32" height="32"/>
+  <object id="42" name="Mushroom" gid="3" x="608.5" y="607.5" width="32" height="32"/>
+  <object id="43" name="Mushroom" gid="3" x="605.5" y="576" width="32" height="32"/>
+  <object id="44" name="Mushroom" gid="3" x="610" y="543.5" width="32" height="32"/>
+  <object id="45" name="Mushroom" gid="3" x="639.5" y="544" width="32" height="32"/>
+  <object id="46" name="Mushroom" gid="3" x="639.5" y="512" width="32" height="32"/>
+  <object id="47" name="Mushroom" gid="3" x="639.5" y="481" width="32" height="32"/>
+  <object id="48" name="Mushroom" gid="3" x="670.5" y="480.5" width="32" height="32"/>
+  <object id="49" name="Mushroom" gid="3" x="670" y="447" width="32" height="32"/>
+  <object id="50" name="Mushroom" gid="3" x="702.5" y="450" width="32" height="32"/>
+  <object id="51" name="Mushroom" gid="3" x="705" y="417.5" width="32" height="32"/>
+  <object id="52" name="Mushroom" gid="3" x="739.5" y="416.5" width="32" height="32"/>
+  <object id="53" name="Mushroom" gid="3" x="771.5" y="410" width="32" height="32"/>
+  <object id="54" name="Mushroom" gid="3" x="770.5" y="384" width="32" height="32"/>
+  <object id="55" name="Mushroom" gid="3" x="805" y="385.5" width="32" height="32"/>
+  <object id="56" name="Mushroom" gid="3" x="841.5" y="383.5" width="32" height="32"/>
+  <object id="57" name="Mushroom" gid="3" x="868.5" y="384" width="32" height="32"/>
+  <object id="58" name="Mushroom" gid="3" x="862.5" y="351" width="32" height="32"/>
+  <object id="59" name="Mushroom" gid="3" x="894.5" y="353.5" width="32" height="32"/>
+  <object id="60" name="Mushroom" gid="3" x="899" y="321" width="32" height="32"/>
+  <object id="61" name="Mushroom" gid="3" x="923" y="318.5" width="32" height="32"/>
+  <object id="62" name="Mushroom" gid="3" x="938.5" y="285.5" width="32" height="32"/>
+  <object id="63" name="Mushroom" gid="3" x="961" y="286" width="32" height="32"/>
+  <object id="64" name="Mushroom" gid="3" x="959" y="257" width="32" height="32"/>
+  <object id="65" name="Mushroom" gid="3" x="962.5" y="224.5" width="32" height="32"/>
+  <object id="66" name="Mushroom" gid="3" x="989.5" y="225.5" width="32" height="32"/>
+  <object id="67" name="Mushroom" gid="3" x="1026.5" y="217.5" width="32" height="32"/>
+  <object id="68" name="Mushroom" gid="3" x="1031" y="191.5" width="32" height="32"/>
+  <object id="69" name="Mushroom" gid="3" x="1059" y="190" width="32" height="32"/>
+  <object id="70" name="Mushroom" gid="3" x="1093" y="190" width="32" height="32"/>
+  <object id="71" name="Mushroom" gid="3" x="1126" y="191.5" width="32" height="32"/>
+  <object id="72" name="Mushroom" gid="3" x="1153.5" y="193" width="32" height="32"/>
+  <object id="73" name="Mushroom" gid="3" x="1188" y="191.5" width="32" height="32"/>
+  <object id="74" name="Mushroom" gid="3" x="1214.5" y="189.5" width="32" height="32"/>
+  <object id="75" name="Mushroom" gid="3" x="1223" y="166.5" width="32" height="32"/>
+  <object id="76" name="Mushroom" gid="3" x="1249.5" y="164" width="32" height="32"/>
+  <object id="77" name="Mushroom" gid="3" x="1283" y="157.5" width="32" height="32"/>
+  <object id="78" name="Mushroom" gid="3" x="1287" y="135" width="32" height="32"/>
+  <object id="79" name="Mushroom" gid="3" x="1315.5" y="129.5" width="32" height="32"/>
+  <object id="80" name="Mushroom" gid="3" x="1355" y="130.5" width="32" height="32"/>
+  <object id="81" name="Mushroom" gid="3" x="1375.5" y="131" width="32" height="32"/>
+  <object id="82" name="Mushroom" gid="3" x="1343.5" y="97" width="32" height="32"/>
+  <object id="83" name="Mushroom" gid="3" x="1375.5" y="80.5" width="32" height="32"/>
+  <object id="84" name="Mushroom" gid="3" x="1382" y="59.5" width="32" height="32"/>
+  <object id="85" name="Mushroom" gid="3" x="1411.5" y="63" width="32" height="32"/>
+  <object id="86" name="Mushroom" gid="3" x="1441.5" y="65.5" width="32" height="32"/>
+  <object id="87" name="Mushroom" gid="3" x="1471.5" y="64" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
   <object id="2" name="Cave" gid="7" x="1472" y="32" width="32" height="32">
    <properties>
-    <property name="goToWorld" value="map-level-01"/>
+    <property name="goToWorld" value="map-level-04"/>
    </properties>
   </object>
  </objectgroup>

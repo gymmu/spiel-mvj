@@ -1,0 +1,2 @@
+-npc Schlüssel für alle levels
+-add alle npcs

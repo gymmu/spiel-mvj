@@ -10,7 +10,9 @@ import "../gameObjects/pickups/mushroom"
 import "../gameObjects/pickups/flower"
 import "../gameObjects/pickups/stone"
 import "../gameObjects/pickups/bush"
-
+import "../gameObjects/pickups/Poison_flower"
+import "../gameObjects/pickups/Fov_mushroom"
+import "../gameObjects/pickups/Heal_flower"
 /**
  * Erweiterung einer Phaser.Scene mit praktischen Funktionen um Spielobjekte
  * automatisch zu erstellen.
@@ -63,6 +65,10 @@ export default class Base2DScene extends Phaser.Scene {
     this.cameraManager.createCamera()
     this.setupDefaultCollisions()
 
+    this.backgroundMusic = this.sound.add('backgroundMusic')
+    this.backgroundMusic.setLoop(true)
+    this.backgroundMusic.play()
+
     // In dieser Scene werden Lebenspunkte und andere Dinge angezeigt.
     this.scene.bringToTop("ui-scene")
 
@@ -82,6 +88,13 @@ export default class Base2DScene extends Phaser.Scene {
   loadMap(mapKey) {
     // Erstellt die Karte so wie sie in `mapKey` definiert ist.
     this.map = this.make.tilemap({ key: mapKey })
+
+    this.physics.world.setBounds(
+      0,
+      0,
+      this.map.widthInPixels,
+      this.map.heightInPixels,
+    )
 
     // Verwendet die Kacheln von "tileset" so wie es in **Tiled** verwendet wird.
     this.tiles = this.map.addTilesetImage("tileset")
