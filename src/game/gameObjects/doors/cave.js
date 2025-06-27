@@ -15,10 +15,20 @@ export default class Cave extends StaticObject {
     if (!actor) return
 
     // Lese die benötigten Eigenschaften der Türe aus
-    const { goToWorld, needNpcsKilled } = this.props
+    const { goToWorld, needNpcsKilled, gameover } = this.props
 
     // Wenn kein Ziel gesetzt ist, mache nichts
-    if (goToWorld == null) return
+    if (gameover) {
+      for (let i = this.scene.player.inventory.length - 1; i>= 0; i--){
+        this.scene.player.removeItemFromInventory(i);
+      }
+      this.scene.cameraManager.cameraMaskRadius = 120
+      this.scene.cameraManager.setCameraMask()
+
+      this.scene.scene.start("ending")
+
+      return
+    }
 
     // Wenn kein Schlüssel gebraucht wird, geh direkt zum Level
     if (needNpcsKilled == null || actor.npcsKilled >= needNpcsKilled) {

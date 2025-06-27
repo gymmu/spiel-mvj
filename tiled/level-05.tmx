@@ -110,7 +110,7 @@
  <objectgroup id="4" name="Doors">
   <object id="155" name="Cave" gid="7" x="387" y="478" width="32" height="32">
    <properties>
-    <property name="goToWorld" value="map-level-01"/>
+    <property name="gameover" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>
