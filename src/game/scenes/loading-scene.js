@@ -14,6 +14,7 @@ export default class LoadingScene extends Phaser.Scene {
    */
   preload() {
     this.load.pack("pack", "./assets/data/pack.json")
+    this.load.audio('backgroundMusic', './assets/sfx/music.mp3')
   }
 
   init() {

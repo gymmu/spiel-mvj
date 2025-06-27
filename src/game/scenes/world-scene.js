@@ -65,6 +65,10 @@ export default class Base2DScene extends Phaser.Scene {
     this.cameraManager.createCamera()
     this.setupDefaultCollisions()
 
+    this.backgroundMusic = this.sound.add('backgroundMusic')
+    this.backgroundMusic.setLoop(true)
+    this.backgroundMusic.play()
+
     // In dieser Scene werden Lebenspunkte und andere Dinge angezeigt.
     this.scene.bringToTop("ui-scene")
 

@@ -5,6 +5,7 @@ import LoadingScene from "./scenes/loading-scene.js" // Importiert die Ladeszene
 import UIScene from "./scenes/ui-scene.js" // Importiert die Benutzeroberflächenszene des Spiels.
 import DebugScene from "./scenes/debug-scene.js" // Importiert die Debug-Szene des Spiels.
 import Base2DScene from "./scenes/world-scene.js"
+import EndingScene from "./scenes/ending-scene.js"
 
 const config = {
   // Konfigurationsobjekt für das Spiel.
@@ -16,7 +17,7 @@ const config = {
   width: 640, // Breite des Spielbereichs, sollte ein Vielfaches von 32 sein, da die Tilesets 32x32 Pixel gross sind.
   height: 480, // Höhe des Spielbereichs, ebenfalls ein Vielfaches von 32.
   parent: "game-canvas", // Die ID des HTML-Elements, in das das Spiel gerendert wird.
-  scene: [LoadingScene, UIScene, DebugScene, Base2DScene], // Die Szenen, die im Spiel verwendet werden.
+  scene: [LoadingScene, UIScene, DebugScene, Base2DScene, EndingScene], // Die Szenen, die im Spiel verwendet werden.
   physics: {
     default: "arcade", // Standard-Physiksystem, das verwendet wird.
     arcade: {
